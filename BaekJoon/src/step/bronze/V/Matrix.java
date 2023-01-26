@@ -13,27 +13,26 @@ public class Matrix {
 		
 		int A[][] = new int[N][M];
 		int B[][] = new int[N][M];
-		
-		for (int i = 0; i < A.length; i++) {
-			for (int j = 0; j < A.length; j++) {
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
 				A[i][j] = sc.nextInt();
 			}
 		}
 		
-		for (int i = 0; i < B.length; i++) {
-			for (int j = 0; j < B.length; j++) {
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
 				B[i][j] = sc.nextInt();
 			}
 		}
 		
-		for (int i = 0; i < A.length; i++) {
-			for (int j = 0; j < A.length; j++) {
-				System.out.print(A[i][j] + B[i][j]);
-				if(j!=M-1) {
-					System.out.print(" ");
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				System.out.print(A[i][j] + B[i][j]+" ");
+				if(j==M-1) {
+					System.out.println();
 				}
 			}
-			System.out.println();
+			
 		}
 		
 	}
